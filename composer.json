@@ -1,4 +1,19 @@
 {
     "name": "hexlet/code",
-    "require": {}
+    "type": "project",
+    "description": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Taiberi Evgenii",
+            "email": "harmankardon00@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "bin": [
+        "bin/brain-games"
+    ]
 }

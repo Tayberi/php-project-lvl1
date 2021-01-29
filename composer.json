@@ -10,8 +10,15 @@
             "role": "Developer"
         }
     ],
+    "autoload": {
+        "files": [
+            "src/Cli.php"
+        ]
+    },
+
     "require": {
-        "php": ">=7.2.0"
+        "php": ">=7.2.0",
+        "wp-cli/php-cli-tools": "^0.11.11"
     },
     "bin": [
         "bin/brain-games"

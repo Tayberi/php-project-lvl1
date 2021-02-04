@@ -1,8 +1,10 @@
 name: PHP CI
 
 on:
-  - push
-  - pull_request
+  push:
+    branshes: [ main ]
+  pull_request:
+    branshes: [ main ]
 
 jobs:
   build:
@@ -10,11 +12,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '7.3.26'
-      - name: Install
-        run: make install
+      
       - name: Run linter
         run: make lint

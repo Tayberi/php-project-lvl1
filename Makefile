@@ -1,4 +1,4 @@
-setup:
+install:
 	composer install
 
 brain-games:

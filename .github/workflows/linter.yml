@@ -1,4 +1,4 @@
-name: Linter
+name: PHP CI
 
 on:
   push:

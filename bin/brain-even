@@ -9,6 +9,6 @@ if (file_exists($globalAutoloadPath)) {
     require_once $projectAutoloadPath;
 }
 
-use Brain\Games\Cli;
+use Brain\Games\Even;
 
-Cli\run();
+Even\run();

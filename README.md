@@ -10,3 +10,7 @@
 Запуск игры: make brain-calc
 
 [![asciicast](https://asciinema.org/a/fMq5rLVAWJe0g218asuXX6KJy.svg)](https://asciinema.org/a/fMq5rLVAWJe0g218asuXX6KJy)
+
+Запуск игры: make brain-gcd
+
+[![asciicast](https://asciinema.org/a/HVW2pwY9CmMrVHYHUfe0d8PyK.svg)](https://asciinema.org/a/HVW2pwY9CmMrVHYHUfe0d8PyK)

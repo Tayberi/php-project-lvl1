@@ -6,3 +6,7 @@
 Запуск игры: make brain-even
 
 [![asciicast](https://asciinema.org/a/XZVCmZKNLMfyiagjNJwgxr3K9.svg)](https://asciinema.org/a/XZVCmZKNLMfyiagjNJwgxr3K9)
+
+Запуск игры: make brain-calc
+
+[![asciicast](https://asciinema.org/a/fMq5rLVAWJe0g218asuXX6KJy.svg)](https://asciinema.org/a/fMq5rLVAWJe0g218asuXX6KJy)

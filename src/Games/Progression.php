@@ -33,12 +33,10 @@ function run()
 
         $questions = implode(' ', $progressionText);
 
-
         return [
             'question' => $questions,
             'answer' => (string)$correctAnswer
         ];
     };
-
     runEngine($generateData, DESCRIPTION);
 }

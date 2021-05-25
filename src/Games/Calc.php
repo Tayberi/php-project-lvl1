@@ -27,9 +27,13 @@ function run(): void
                 break;
         }
 
+        $numberFirstStr = strval($numberFirst);
+        $numberSecondStr = strval($numberSecond);
+        $correctAnswerStr = strval($correctAnswer);
+
         return [
-            'question' => "$numberFirst $operator $numberSecond",
-            'answer' => (string)$correctAnswer
+            'question' => $numberFirstStr . $operator . $numberSecondStr,
+            'answer' => $correctAnswerStr
         ];
     };
 

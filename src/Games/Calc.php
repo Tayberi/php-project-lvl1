@@ -30,11 +30,10 @@ function run(): void
                 $correctAnswer = $numberFirst + $numberSecond;
         }
 
-        $numberFirstStr = strval($numberFirst);
-        $numberSecondStr = strval($numberSecond);
+
 
         return [
-            'question' => $numberFirstStr . ' '. $operator . ' ' . $numberSecondStr,
+            'question' => "$numberFirstStr $operator $numberSecondStr",
             'answer' => (string)$correctAnswer
         ];
     };

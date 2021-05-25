@@ -10,7 +10,7 @@ const STEP = 2;
 const FIRST_NUMBER_OF_PROGRESSION = 1;
 
 
-function makeProgression($firstNumberGfProgression, $step, $lengthOfProgression): array
+function makeProgression(int $firstNumberGfProgression, int $step, int $lengthOfProgression): array
 {
     $progression = [];
     for ($i = 0; $i < $lengthOfProgression; $i++) {

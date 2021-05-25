@@ -25,13 +25,11 @@ function run(): void
                 $operator = '*';
                 $correctAnswer = $numberFirst * $numberSecond;
                 break;
-            default:
-                return null;
         }
 
         return [
             'question' => "$numberFirst $operator $numberSecond",
-            'answer' => (string)$correctAnswer
+            'answer' => $correctAnswer
         ];
     };
 

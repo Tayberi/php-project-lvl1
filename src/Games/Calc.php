@@ -28,7 +28,7 @@ function run(): void
         }
 
         return [
-            'question' => "$numberFirst" . $operator . "$numberSecond",
+            'question' => "{$numberFirst} $operator {$numberSecond}",
             'answer' => strval($correctAnswer)
         ];
     };

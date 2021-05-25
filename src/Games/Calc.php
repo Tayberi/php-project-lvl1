@@ -14,21 +14,21 @@ function run(): void
 
         switch (rand(1, 3)) {
             case 1:
-                $operator = "+";
+                $operator = '+';
                 $correctAnswer = $numberFirst + $numberSecond;
                 break;
             case 2:
-                $operator = "-";
+                $operator = '-';
                 $correctAnswer = $numberFirst - $numberSecond;
                 break;
             case 3:
-                $operator = "*";
+                $operator = '*';
                 $correctAnswer = $numberFirst * $numberSecond;
                 break;
         }
 
         return [
-            'question' => "{$numberFirst} {$operator} {$numberSecond}",
+            'question' => "$numberFirst $operator $numberSecond",
             'answer' => (string)$correctAnswer
         ];
     };

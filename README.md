@@ -22,3 +22,4 @@
 Запуск игры: make brain-prime
 
 [![asciicast](https://asciinema.org/a/pkF7Oj0ikxYuoIkIbxqNXTNah.svg)](https://asciinema.org/a/pkF7Oj0ikxYuoIkIbxqNXTNah)
+

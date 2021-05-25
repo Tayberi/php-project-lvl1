@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const MAX_ROUNDS_COUNT = 3;
 
-function run(callable $generateData, string $description):void
+function run(callable $generateData, string $description): void
 {
     line('Welcome to the Brain Games!');
 

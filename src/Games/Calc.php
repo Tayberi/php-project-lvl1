@@ -29,7 +29,7 @@ function run(): void
 
         return [
             'question' => "$numberFirst $operator $numberSecond",
-            'answer' => $correctAnswer
+            'answer' => (string)$correctAnswer
         ];
     };
 

@@ -28,8 +28,8 @@ function run(): void
         }
 
         return [
-            'question' => "$numberFirst $operator $numberSecond",
-            'answer' => (string)$correctAnswer
+            'question' => "$numberFirst" . $operator . "$numberSecond",
+            'answer' => strval($correctAnswer)
         ];
     };
 

@@ -12,7 +12,7 @@ function run(callable $generateData, string $description): void
     line('Welcome to the Brain Games!');
 
 
-    $userName = prompt('May I have your name?', false, ' ');
+    $userName = prompt('May I have your name?');
     line("Hello, $userName!", $userName);
 
     line($description);

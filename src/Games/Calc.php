@@ -32,7 +32,7 @@ function run(): void
         $correctAnswerStr = strval($correctAnswer);
 
         return [
-            'question' => $numberFirstStr . $operator . $numberSecondStr,
+            'question' => $numberFirstStr . ' ' . $operator . ' ' . $numberSecondStr,
             'answer' => $correctAnswerStr
         ];
     };

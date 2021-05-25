@@ -25,15 +25,17 @@ function run(): void
                 $operator = '*';
                 $correctAnswer = $numberFirst * $numberSecond;
                 break;
+            default:
+                $operator = '+';
+                $correctAnswer = $numberFirst + $numberSecond;
         }
 
         $numberFirstStr = strval($numberFirst);
         $numberSecondStr = strval($numberSecond);
-        $correctAnswerStr = strval($correctAnswer);
 
         return [
-            'question' => $numberFirstStr . ' ' . $operator . ' ' . $numberSecondStr,
-            'answer' => $correctAnswerStr
+            'question' => $numberFirstStr . ' '. $operator . ' ' . $numberSecondStr,
+            'answer' => (string)$correctAnswer
         ];
     };
 

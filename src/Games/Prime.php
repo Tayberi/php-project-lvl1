@@ -8,7 +8,7 @@ const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no
 const LOWER_BORDER = 2;
 const UPPER_BORDER = 3571;
 
-function isPerfect(int $number)
+function isPerfect(int $number): string
 {
     $sum = 0;
 
@@ -25,9 +25,9 @@ function isPerfect(int $number)
     }
 }
 
-function run()
+function run(): void
 {
-    $generateData = function () {
+    $generateData = function (): array {
         $number = rand(LOWER_BORDER, UPPER_BORDER);
         $correctAnswer = isPerfect($number);
         return [

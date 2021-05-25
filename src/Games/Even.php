@@ -8,7 +8,7 @@ const DESCRIPTION = 'Answer "yes" if given number is even, otherwise answer "no"
 const LOWER_BORDER = 1;
 const UPPER_BORDER = 100;
 
-function isEven(int $number)
+function isEven(int $number): string
 {
     if ($number % 2 !== 0) {
         return 'no';
@@ -16,9 +16,9 @@ function isEven(int $number)
     return 'yes';
 }
 
-function run()
+function run(): void
 {
-    $generateData = function () {
+    $generateData = function (): array {
         $number = rand(LOWER_BORDER, UPPER_BORDER);
         $correctAnswer = isEven($number);
         return [

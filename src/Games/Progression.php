@@ -10,7 +10,7 @@ const STEP = 2;
 const FIRST_NUMBER_OF_PROGRESSION = 1;
 
 
-function makeProgression($firstNumberGfProgression, $step, $lengthOfProgression)
+function makeProgression($firstNumberGfProgression, $step, $lengthOfProgression): array
 {
     $progression = [];
     for ($i = 0; $i < $lengthOfProgression; $i++) {
@@ -19,9 +19,9 @@ function makeProgression($firstNumberGfProgression, $step, $lengthOfProgression)
     return $progression;
 }
 
-function run()
+function run(): void
 {
-    $generateData = function () {
+    $generateData = function (): array {
         $missingElementIndex = mt_rand(0, LENGTH_OF_PROGRESSION - 1);
         $progression = makeProgression(FIRST_NUMBER_OF_PROGRESSION, STEP, LENGTH_OF_PROGRESSION);
 
@@ -35,7 +35,7 @@ function run()
 
         return [
             'question' => $questions,
-            'answer' => (string)$correctAnswer
+            'answer' => $correctAnswer
         ];
     };
     runEngine($generateData, DESCRIPTION);

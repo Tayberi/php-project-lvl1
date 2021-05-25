@@ -6,9 +6,9 @@ use function Brain\Games\Engine\run as runEngine;
 
 const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
 
-function run()
+function run(): void
 {
-    $generateData = function () {
+    $generateData = function (): array {
         $numberFirst = rand(1, 100);
         $numberSecond = rand(1, 100);
         $correctAnswer = calculateGcd($numberFirst, $numberSecond);

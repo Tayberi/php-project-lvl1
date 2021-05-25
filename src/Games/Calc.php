@@ -6,9 +6,9 @@ use function Brain\Games\Engine\run as runEngine;
 
 const DESCRIPTION = 'What is the result of the expression?';
 
-function run()
+function run(): void
 {
-    $generateData = function () {
+    $generateData = function (): array {
         $numberFirst = rand(1, 100);
         $numberSecond = rand(1, 100);
 
